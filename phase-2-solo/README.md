@@ -1,51 +1,20 @@
-README: React Evernote
-======================
+# Welcome to React Evernote
+This notes application allows a user to keep track of things that they want to remember and makes these notes easily accessible to find again through the search by title feature, and the sorting features. 
 
-Task Lister is making its return in React! However, this time we'll be kicking it up a notch and using that same backend to drive an Evernote-like frontend built in React.
+## Project Requirements
+    - db.json file storing notes with title, body and id attributes
+    - React app running on localhost:4000 & JSON server on localhost:3000
+    - Fetch to separate routes (GET '/notes', POST '/notes', PATCH 'notes/:id)
 
-Your goal will be to complete the baseline deliverables using the provided starter code and then make this project your own by building out unique stretch goals. Some suggestions are listed below, but try to be creative!
-
-## Requirements
-
-- [ ] Complete all of the *Deliverables*.
-- [ ] Build out at least 1 stretch goal feature.
-
-### Backend
-
-```
-json-server --watch db.json
-
-```
-// example notes, remove these and replace them with your own!
-{
-    "notes": [
-        { "id": 1, "title": "my first react project", "body": "Plan out project." },
-        { "id": 2, "title": "do labs", "body": "Finish react router labs by sunday." },
-        { "id": 1, "title": "walk cat", "body": "Take rose for a walk." }
-    ] 
-}
-```
-```
-
-
-### Frontend
-
-```
-npm install
-PORT=4000 npm start
-```
-
-This React app will be running on `http://localhost:4000`.
-
-This JSON server will be running on `http://localhost:3000`.
-
-#### Routes
-
-| Method | Route           | Headers                                                                 | Body                  |
-| ------ | --------------- |:-----------------------------------------------------------------------:|:---------------------:|
-| GET    | `/notes`        |                                                                         |                       |
-| POST   | `/notes`        | `'Content-Type': 'application/json'`<br/>`'Accept': 'application/json'` | title, body           |
-| PATCH  | `/notes/:id`    | `'Content-Type': 'application/json'`<br/>`'Accept': 'application/json'` | title, body           |
+## User Statements
+  - Deliverables:
+    - As a user I can create a note
+    - As a user I can see my notes in the side bar
+    - As a user I can edit a note (and save or cancel my edits)
+    - As a user I can filter through all my notes by title in the search bar
+  - Stretch:
+    - As a user I can sort my notes alphabetically, by date created, by date edited
+    - As a user I can delte a note
 
 
 
